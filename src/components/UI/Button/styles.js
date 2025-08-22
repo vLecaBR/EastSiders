@@ -22,6 +22,13 @@ const variants = {
       background-color: ${({ theme }) => theme.colors.dangerDark};
     }
   `,
+  destructive: css`
+    background-color: ${({ theme }) => theme.colors.danger};
+    color: white;
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.dangerDark};
+    }
+  `,
 };
 
 export const ButtonContainer = styled.button`

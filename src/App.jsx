@@ -2,21 +2,19 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import theme from "./theme/theme";
-import GlobalStyle from "./theme/GlobalStyle";
+import theme from ".//theme/theme";
+import GlobalStyle from "./theme/GlobalStyles";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 // Pages
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home/Home";
+import Services from "./pages/Services/Services";
+import Gallery from "./pages/Gallery/Gallery";
+import Contact from "./pages/Contact/Contact";
 
-// Dev only (UI showcase)
-import UIShowcase from "./pages/UIShowcase";
 
 function App() {
   return (
@@ -30,7 +28,6 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/ui" element={<UIShowcase />} /> {/* dev route */}
           </Routes>
         </main>
         <Footer />

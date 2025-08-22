@@ -7,7 +7,7 @@ import {
   NavLinks,
   MobileMenu,
   MenuButton,
-} from "./Navbar.styles";
+} from "./styles";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
