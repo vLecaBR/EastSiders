@@ -16,7 +16,7 @@ export default function Navbar() {
     <Nav>
       <NavContent>
         {/* Logo */}
-        <Logo>
+        <Logo as="a" href="#hero">
           <Wrench size={28} />
           <span>EastSiders</span>
         </Logo>
