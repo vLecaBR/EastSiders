@@ -1,3 +1,4 @@
+// styles.js
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
@@ -19,6 +20,10 @@ export const FooterContainer = styled.footer`
     gap: 8px;
     font-weight: bold;
     font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 32px 16px 16px;
   }
 `;
 
