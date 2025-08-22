@@ -1,4 +1,4 @@
-import { ButtonContainer } from "./Button.styles";
+import { ButtonContainer } from "./styles";
 
 export default function Button({ children, variant = "primary", disabled = false, fullWidth = false, onClick }) {
   return (

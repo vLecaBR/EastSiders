@@ -1,5 +1,5 @@
 import { Button } from "../ui/Button";
-import { HeroContainer, HeroContent, HeroText, HeroImage } from "./Hero.styles";
+import { HeroContainer, HeroContent, HeroText, HeroImage } from "./styles";
 
 export default function Hero() {
   return (

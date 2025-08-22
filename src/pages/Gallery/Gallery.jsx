@@ -4,7 +4,7 @@ import {
   ImagesGrid, 
   ImageCard, 
   Image 
-} from "./Gallery.styles";
+} from "./styles";
 
 import { useState } from "react";
 

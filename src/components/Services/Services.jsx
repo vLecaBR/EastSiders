@@ -1,5 +1,5 @@
 import { Wrench, Droplet, SprayCan, Car } from "lucide-react";
-import { ServicesContainer, ServicesGrid, ServiceCard } from "./Services.styles";
+import { ServicesContainer, ServicesGrid, ServiceCard } from "./styles";
 
 const services = [
   {

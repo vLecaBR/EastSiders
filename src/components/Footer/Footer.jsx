@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail, Phone, Wrench } from "lucide-react";
-import { FooterContainer, FooterContent, FooterSection, SocialLinks } from "./Footer.styles";
+import { FooterContainer, FooterContent, FooterSection, SocialLinks } from "./styles";
 
 export default function Footer() {
   return (

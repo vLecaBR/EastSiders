@@ -1,4 +1,4 @@
-import { CardContainer, CardImage, CardContent, CardTitle, CardDescription } from "./Card.styles";
+import { CardContainer, CardImage, CardContent, CardTitle, CardDescription } from "./styles";
 
 export default function Card({ title, description, image, children, onClick }) {
   return (

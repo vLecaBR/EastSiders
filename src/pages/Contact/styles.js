@@ -1,66 +1,47 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.div`
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 0 16px;
+export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  background-color: ${({ theme }) => theme.colors.background};
+  border-radius: ${({ theme }) => theme.radius.lg};
+  box-shadow: ${({ theme }) => theme.shadows.md};
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: ${({ theme }) => theme.shadows.lg};
+  }
 `;
 
-export const ContactTitle = styled.h2`
-  font-size: 2rem;
-  text-align: center;
+export const CardImage = styled.img`
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+`;
+
+export const CardContent = styled.div`
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const CardTitle = styled.h3`
+  font-size: 1.1rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
-export const ContactForm = styled.form`
+export const CardDescription = styled.p`
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.colors.textSecondary};
+`;
+
+export const CardFooter = styled.div`
+  padding: 16px;
+  border-top: 1px solid ${({ theme }) => theme.colors.muted};
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-`;
-
-export const InputField = styled.input`
-  padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.radius.sm};
-  font-size: 1rem;
-
-  &:focus {
-    outline: none;
-    border-color: ${({ theme }) => theme.colors.primary};
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.primaryLight};
-  }
-`;
-
-export const TextArea = styled.textarea`
-  padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.radius.sm};
-  font-size: 1rem;
-  min-height: 140px;
-  resize: vertical;
-
-  &:focus {
-    outline: none;
-    border-color: ${({ theme }) => theme.colors.primary};
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.primaryLight};
-  }
-`;
-
-export const SubmitButton = styled.button`
-  padding: 12px 16px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: ${({ theme }) => theme.radius.sm};
-  cursor: pointer;
-  transition: background 0.3s ease;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.primaryDark};
-  }
+  justify-content: flex-end;
 `;
