@@ -1,7 +1,7 @@
 // ContactPage.jsx
 import React from "react";
 import styled from "styled-components";
-import { Button } from "../../components/UI/Button/Button";
+import Button  from "../../components/UI/Button/Button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../../components/UI/Card/Card";
 import { Input } from "../../components/UI/Input/Input";
 import { Label } from "../../components/UI/Label/Label";
