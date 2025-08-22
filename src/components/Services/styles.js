@@ -1,3 +1,4 @@
+// styles.js
 import styled from "styled-components";
 
 export const ServicesContainer = styled.section`
@@ -17,6 +18,10 @@ export const ServicesContainer = styled.section`
     margin-bottom: 40px;
     font-size: 16px;
   }
+
+  @media (max-width: 480px) {
+    padding: 48px 16px;
+  }
 `;
 
 export const ServicesGrid = styled.div`
@@ -26,7 +31,7 @@ export const ServicesGrid = styled.div`
 `;
 
 export const ServiceCard = styled.div`
-  background: white;
+  background: ${({ theme }) => theme.colors.card || "white"};
   padding: 32px 24px;
   border-radius: ${({ theme }) => theme.radius.lg};
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -35,6 +40,7 @@ export const ServiceCard = styled.div`
   .icon {
     margin-bottom: 16px;
     color: ${({ theme }) => theme.colors.primary};
+    transition: color 0.3s ease;
   }
 
   h3 {
@@ -51,5 +57,9 @@ export const ServiceCard = styled.div`
   &:hover {
     transform: translateY(-6px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+
+    .icon {
+      color: ${({ theme }) => theme.colors.secondary};
+    }
   }
 `;
